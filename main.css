@@ -1,6 +1,7 @@
 
 body {
 	margin: 0px;
+	font-family: 'Open Sans', arial, sans-serif;
 }
 
 
@@ -16,6 +17,42 @@ body {
 	max-width: 1300px;
 }
 
-.test {
-	
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 20px;
+	font-size: 14px;
+	color: #fff;
+	flex-wrap: wrap;
+}
+
+
+
+.header_up {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav_item {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.logo_txt {
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+}
+
+.logo_txt1{
+	font-weight: 700;
+}
+
+.logo_item {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
 }
