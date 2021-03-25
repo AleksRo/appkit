@@ -30,14 +30,10 @@ body {
 
 
 
-.header_up {
-	display: flex;
-	justify-content: space-between;
-}
-
 .nav_item {
 	display: inline-block;
 	list-style-type: none;
+	text-align: center;
 }
 
 .logo_txt {
@@ -59,6 +55,37 @@ body {
 	vertical-align: middle;
 }
 
+
+nav ul {
+	float: right;
+}
+
 .main_nav {
 	text-align: center;
 }
+
+
+@media (max-width: 985px) {
+
+nav ul li a {
+	font-size: 16px;
+}
+
+}
+
+@media (max-width: 858px) {
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		line-height: 2em;
+		width: 100%;
+		background: black;
+		text-align: center;
+		opacity: 0.6;
+	}
+
+}
+
+
+
