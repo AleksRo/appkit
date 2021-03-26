@@ -5,6 +5,12 @@ body {
 }
 
 
+h1, h2, h3, h4, h5, h6 {
+ margin: 0;
+ padding: 0;
+}
+
+
 .intro_main {
 	width: 100%;
 	height: 560px;
@@ -29,39 +35,61 @@ body {
 }
 
 
+.menu {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	float: right;
+}
+
 
 .nav_item {
-	display: inline-block;
 	list-style-type: none;
-	text-align: center;
 }
 
 .logo_txt {
-	display: inline-block;
-	font-size: 14px;
+	font-size: 26px;
 	color: #fff;
 	font-weight: 300;
-    margin-top: 10px;
-    margin-left: 20px;
+	float: left;
 }
 
+
 .logo_txt1{
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .logo_item {
 	width: 30px;
 	height: 30px;
-	vertical-align: middle;
 }
-
 
 nav ul {
 	float: right;
 }
 
-.main_nav {
-	text-align: center;
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	margin-top: 20px;
+	display: none;
+}
+
+
+
+
+#check:checked ~ ul {
+	display: none;
+}
+
+
+@media (max-width: 735px) {
+	.checkbtn {
+		display: inherit;
+	}
 }
 
 
@@ -75,7 +103,7 @@ nav ul li a {
 
 @media (max-width: 858px) {
 
-	ul {
+	.menu {
 		display: flex;
 		flex-direction: column;
 		line-height: 2em;
@@ -84,8 +112,4 @@ nav ul li a {
 		text-align: center;
 		opacity: 0.6;
 	}
-
 }
-
-
-
