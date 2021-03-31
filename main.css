@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	flex-direction: row;
 	float: right;
+	margin-top: 24px;
 }
 
 
@@ -163,10 +164,17 @@ ul {
 
 
 
+@media (min-width: 880px) {
+	
+	#check:checked ~ ul {
+	display: flex;
+	}
+}	
 
-@media (max-width: 735px) {
+@media (max-width: 880px) {
 	
 	.logo_txt {
+		margin: 10px;
 		color: black;
 	}
 	.btn_menu {
@@ -181,15 +189,13 @@ ul {
 	.header {
 	background-color: white;
 	}
-}	
-
-
-@media (max-width: 735px) {
-	
 	.checkbtn {
 		display: inherit;
+		cursor: pointer;
 	}
-}
+
+
+}	
 
 
 @media (max-width: 985px) {
@@ -210,6 +216,7 @@ ul {
 		width: 100%;
 		background: black;
 		text-align: center;
+		margin: 0px;
 	}
 }
 
