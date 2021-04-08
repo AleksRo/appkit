@@ -716,6 +716,27 @@ ul {
 	Section footer
 */
 
+.intro_footer {
+	background: #26282c;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 0;
+}
+.footer {
+	text-align: center;
+}
+
+.footer_name {
+	color: #40babd;
+}
+
+.icon_heart {
+	color: #ea5395;
+}
+
+.footer_text {
+	font-size: 85%;
+}
+
 @media (min-width: 880px) {
 	
 	#check:checked ~ ul {
