@@ -177,7 +177,6 @@ ul {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	flex-wrap: wrap;
 }
 
 .li_img {
@@ -232,9 +231,10 @@ ul {
 
 .section_2 {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 86px 0px 86px 0px;
 }
 
 
@@ -245,14 +245,18 @@ ul {
     font-weight: 300;
     color: #fff;
 	text-align: center;
-	margin-top: 91px;
+}
+
+.forum_chat {
+	background: rgba(0,0,0, 0.2);
+    border-radius: 0.2em;
+    padding: 30px;
 }
 
 .chat_text {
 	font-size: 14px;
 	font-style: normal;
 	color: white;
-	word-wrap: normal;
 }
 
 .chat_signature {
@@ -263,66 +267,65 @@ ul {
 
 .chat_block {
 	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	text-align: left;
-	background: rgba(0,0,0, 0.5);
-	border-radius: 0.5em;
-    margin: 41px 0px 51px 0px;;
-    padding: 20px;
-	max-width: 500px;
-    width: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 44px 0px 25px;
+    padding: 31px;
 }
 
-.chat_block1 {
+#chat_1 {
+	margin: 11px 122px 14px 23px;
+    padding: 30px;
+}
+
+#chat_2 {
+	margin: 17px 21px 41px 248px;
+    padding: 30px;
+}
+
+.chat_block {
 	display: flex;
-	position: relative;
-	flex-direction: column;
-	margin-left: 10px;
-	text-align: left;
-	background: rgba(0,0,0, 0.5);
-	border-radius: 0.5em;
-    margin: 41px 226px 51px 0px;
-    padding: 20px;
-	max-width: 500px;
-    width: 100%;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin: 17px;
 }
 
 .triangle {
-    content: '';
+	content: '';
     border: 10px solid transparent;
     position: absolute;
-	border-bottom: 10px solid rgba(0,0,0, 0.5);
-	transform: rotate(-90deg);
-	left: -20px;
-    top: 22px;
+    border-bottom: 10px solid rgba(0,0,0, 0.2);
+}
+
+#right_arrow {
+	position: absolute;
+    transform: rotate(-270deg);
+	right: 219px;
+    top: 61px;
+}
+
+#left_arrow {
+	position: absolute;
+    transform: rotate(-90deg);
+	left: 321px;
+    top: 43px;
+}
+
+#avatar1 {
+	margin: 3px 3px 76px 235px;
+}
+
+#avatar2 {
+	margin: 0px 138px 63px 0px;
 }
 
 .avatar {
 	width: 80px;
-	height: 80px;
-	position: absolute;
-	top: -8px;
-    left: -113px;
-}
-
-.avatar1 {
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	top: -8px;
-    right: -113px;
-}
-
-.triangle1 {
-    content: '';
-    border: 10px solid transparent;
-    position: absolute;
-	border-bottom: 10px solid rgba(0,0,0, 0.5);
-	transform: rotate(-270deg);
-	right: -20px;
-	top: 22px;
+    height: 80px;
 }
 
 /* 
@@ -809,4 +812,13 @@ ul {
 	.txt_inner {
 		margin-top: 24px;
 	}
+}
+
+
+@media (max-width: 800px) {
+
+	.blocks_info {
+		flex-wrap: wrap;
+	}
+
 }
