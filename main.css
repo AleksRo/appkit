@@ -820,5 +820,8 @@ ul {
 	.blocks_info {
 		flex-wrap: wrap;
 	}
+	.blokks {
+		flex-wrap: wrap-reverse;
+	}
 
 }
