@@ -177,6 +177,7 @@ ul {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .li_img {
@@ -190,6 +191,8 @@ ul {
 	justify-content: center;
 	margin-top: 60px;
 	margin-bottom: 90px;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .section_1 {
