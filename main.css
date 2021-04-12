@@ -257,6 +257,7 @@ ul {
 	font-size: 14px;
 	font-style: normal;
 	color: white;
+	line-height: 1.5em;
 }
 
 .chat_signature {
@@ -490,6 +491,7 @@ ul {
     background: white;
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 .li_icon {
 	list-style-type: none;
@@ -607,7 +609,6 @@ ul {
 .sec5_block_title {
 	font-size: 22px;
 	color: white;
-	width: 223px;
 }
 .sec5_block_text {
 	font-size: 14px;
@@ -637,13 +638,13 @@ ul {
 	font-size: 30px;
     position: absolute;
     top: 2px;
-    left: 31px;
+    left: -16px;
 }
 
 #cur_item1 {
 	position: absolute;
     top: 2px;
-    left: 59px;
+    left: -18px;
 }
 
 .btn_lines {
@@ -660,9 +661,9 @@ ul {
 }
 
 #cur_item {
-    position: absolute;
+	position: absolute;
     top: 3px;
-    left: 59px;
+    left: -18px;
 }
 
 .lines_block {
@@ -824,4 +825,132 @@ ul {
 		flex-wrap: wrap-reverse;
 	}
 
+}
+
+@media (max-width: 809px) {
+
+	.sec4_blocks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 50px;
+		flex-wrap: wrap;
+	}
+	
+	#chat_1 {
+		margin: 11px 23px 14px 20px;
+		padding: 18px;
+	}
+	
+	#avatar1 {
+		margin: -13px 3px 76px 28px;
+	}
+
+	#avatar2 {
+		margin: -7px 46px 63px 0px;
+	}
+
+	.avatar {
+		width: 60px;
+		height: 60px;
+	}
+
+	#chat_2 {
+		margin: 17px 23px 41px 32px;
+		padding: 18px;
+	}
+	
+	#left_arrow {
+		position: absolute;
+		transform: rotate(-90deg);
+		left: 91px;
+		top: 43px;
+	}
+	
+	#right_arrow {
+		position: absolute;
+		transform: rotate(-270deg);
+		right: 109px;
+		top: 61px;
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	.logo_item2 {
+		width: 320px;
+		position: absolute;
+		top: 359px;
+		left: 136px;
+	}
+	.txt_inner {
+		margin-top: 24px;
+	}
+}
+
+
+@media (max-width: 950px) {
+
+	.block_user {
+			flex-direction: column;
+			height: 420px;
+			background-color: white;
+			margin-left: 32px;
+			border-radius: 0.5em;
+			padding: 23px;
+			margin-bottom: 25px;
+			max-width: 1000px;
+			width: 100%;
+	}
+	.user_discription {
+		font-size: 14px;
+		margin-bottom: 15px;
+		line-height: 1.5;
+		color: #797979;
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 958px) {
+
+	.sec5_block {
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.5em;
+		padding: 30px;
+		margin-left: 30px;
+		align-items: center;
+		max-width: 175px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 809px) {
+
+	.sec5_block {
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.5em;
+		padding: 30px;
+		margin-left: 30px;
+		align-items: center;
+		max-width: 563px;
+		width: 100%;
+		margin-bottom: 27px;
+	}
+	.sec5_blocks {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin-top: 85px;
+		margin-bottom: 73px;
+		margin-left: 5px;
+		flex-direction: column;
+	}
 }
